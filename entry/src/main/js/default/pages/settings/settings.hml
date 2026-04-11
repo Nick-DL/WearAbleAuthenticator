@@ -1,0 +1,19 @@
+<div class="container" @swipe="handleSwipe">
+    <div class="head">
+        <text class="head-txt">设置</text>
+        <text class="head-time">{{ timeString }}</text>
+    </div>
+
+    <div class="item-container">
+        <div class="item" @click="handleEditLockSettings">
+            <image class="item-icon" @click="handleEditLockSettings" src="/common/icon_lock.png"></image>
+            <text class="item-text" @click="handleEditLockSettings">密码</text>
+            <image class="item-arrow" src="/common/icon_more_arrow.png"></image>
+        </div>
+        <div class="item" @click="handleAbout">
+            <image class="item-icon" @click="handleAbout" src="/common/icon_about.png"></image>
+            <text class="item-text" @click="handleAbout">关于</text>
+            <image class="item-arrow" src="/common/icon_more_arrow.png"></image>
+        </div>
+    </div>
+</div>

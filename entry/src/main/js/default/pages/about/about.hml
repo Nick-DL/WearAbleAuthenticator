@@ -1,0 +1,38 @@
+<stack class="container">
+    <div class="container" show="{{ showMain }}" @swipe="handleSwipe">
+        <div class="head">
+            <text class="head-txt">关于</text>
+            <text class="head-time">{{ timeString }}</text>
+        </div>
+        <list class="list" @swipe="handleSwipe">
+            <list-item class="icon-content-container">
+                <image class="app-icon" src="/common/app_icon_small.png"></image>
+            </list-item>
+            <list-item class="app-content-container">
+                <div class="app-sub-content-container">
+                    <text class="app-name-text">身份验证器</text>
+                    <text class="app-version-text">版本: {{ versionName }}({{ versionCode }})</text>
+                    <text class="app-version-text">作者: @cnoim</text>
+                    <text class="app-content-text">图标: @Google</text>
+                    <text class="app-content-text">方屏幕适配：@Nick_DL</text>
+                </div>
+            </list-item>
+            <!--<list-item class="app-other-text-container">
+                <text class="app-other-text">来自开发者的其他应用：</text>
+            </list-item>
+            <list-item class="app-content-container app-other-container" for="{{ otherList }}"
+                       @click="replaceQrCode($idx)">
+                <image class="app-icon" src="{{ $item.icon }}"></image>
+                <div class="app-sub-content-container">
+                    <text class="app-name-text">{{ $item.name }}</text>
+                    <text class="app-content-text">{{ $item.description }}</text>
+                </div>
+            </list-item>
+            <list-item class="empty-item"></list-item>-->
+        </list>
+    </div>
+    <div class="container" @swipe="handleQrCodeSwipe" if="{{ showQrCode }}">
+        <text style="margin-top : 35px; margin-bottom : 35px;">请扫描二维码</text>
+        <qrcode style="width : 245px; height : 245px;" value="{{ qrValue }}"></qrcode>
+    </div>
+</stack>

@@ -1,0 +1,45 @@
+<stack class="container">
+    <div class="container" show="{{ showMain }}" @swipe="handleMainSwipe">
+        <div class="title-container">
+            <text class="title-text">密码</text>
+        </div>
+        <div class="item-container">
+            <div class="item" if="{{ !isLocked }}" @click="handleSettings('input')">
+                <image class="item-icon" src="/common/icon_lock.png"></image>
+                <text class="item-text">设置密码</text>
+                <image class="item-arrow" src="/common/icon_more_arrow.png"></image>
+            </div>
+            <div class="item" if="{{ isLocked }}" @click="handleSettings('modify')">
+                <image class="item-icon" src="/common/icon_lock.png"></image>
+                <text class="item-text">修改密码</text>
+                <image class="item-arrow" src="/common/icon_more_arrow.png"></image>
+            </div>
+            <div class="item" if="{{ isLocked }}" @click="handleSettings('delete')">
+                <image class="item-icon" src="/common/icon_lock.png"></image>
+                <text class="item-text">关闭密码</text>
+                <image class="item-arrow" src="/common/icon_more_arrow.png"></image>
+            </div>
+            <div class="item tips-item">
+                <text class="tips-text">请注意：密码一旦设置将无法找回，请务必记住密码。</text>
+            </div>
+        </div>
+    </div>
+    <stack class="container" @swipe="handleSettingsSwipe" show="{{ showSettings }}">
+        <div class="container">
+            <text class="lock-settings-title" style="letter-spacing : {{ letter_space }};">{{ lock_tips }}</text>
+            <div class="number-container">
+                <input type="button" @click="input('1')" class="input-number input-left" value="1"></input>
+                <input type="button" @click="input('2')" class="input-number" value="2"></input>
+                <input type="button" @click="input('3')" class="input-number" value="3"></input>
+                <input type="button" @click="input('4')" class="input-number input-left" value="4"></input>
+                <input type="button" @click="input('5')" class="input-number" value="5"></input>
+                <input type="button" @click="input('6')" class="input-number" value="6"></input>
+                <input type="button" @click="input('7')" class="input-number input-left" value="7"></input>
+                <input type="button" @click="input('8')" class="input-number" value="8"></input>
+                <input type="button" @click="input('9')" class="input-number" value="9"></input>
+                <input type="button" @click="input('0')" class="input-number input-left" value="0"></input>
+            </div>
+        </div>
+        <input type="button" class="delete-button" @click="delete"></input>
+    </stack>
+</stack>

@@ -1,0 +1,46 @@
+<stack class="container" @swipe="handleSwipe">
+    <div class="container">
+        <div class="head">
+            <text class="head-txt">身份验证器</text>
+            <text class="head-time">{{ timeString }}</text>
+        </div>
+        <div class="content-container">
+            <div class="item-container" for="{{ renderList }}" @click="handleExport($idx)" @longpress="handleDeleteOtp($idx)">
+                <div class="code-desc-container">
+                    <text class="code-text">{{ $item.code }}</text>
+                    <text class="desc-text">{{ $item.desc }}</text>
+                </div>
+                <text class="seconds-text">{{ updateTime }}s</text>
+            </div>
+            <div class="empty-container" if="{{ otpList.length == 0 }}">
+                <text class="empty-text">当前暂无令牌\n请先添加一个</text>
+            </div>
+        </div>
+        <div class="menu-container">
+            <input type="button" class="bottom-icon up-icon button-with-icon" @click="handleListDown"></input>
+            <input type="button" class="bottom-icon settings-icon button-with-icon" @click="handleSettings"></input>
+            <input type="button" class="bottom-icon add-icon button-with-icon" @click="handleAdd"></input>
+            <input type="button" class="bottom-icon down-icon button-with-icon" @click="handleListUp"></input>
+        </div>
+    </div>
+    <progress class="progress progress-background" type="arc" percent="100"></progress>
+    <progress class="progress progress-top-foreground" type="arc" percent="{{ progressTopPercent }}"></progress>
+    <progress class="progress progress-bottom-foreground" type="arc" percent="{{ progressBottomPercent }}"></progress>
+    <div class="container delete-container" if="{{ showDelete }}" @swipe="handleDeleteSwipe">
+        <div class="title-container">
+            <text class="title">删除</text>
+        </div>
+        <div class="delete-sub-container">
+            <text class="delete-text">是否删除该令牌？</text>
+            <div class="delete-button-container">
+                <input class="delete-icon cancel-icon" @click="handleDeleteCancel" type="button"></input>
+                <input class="delete-icon check-icon" @click="handleDeleteConfirm" type="button"></input>
+            </div>
+        </div>
+    </div>
+    <div class="container export-container" if="{{ showExport }}" @swipe="handleQrSwipe">
+        <text style="margin-bottom: 10px;height: 40px;">扫一扫二维码</text>
+        <qrcode class="qrcode" value="{{ qrValue }}"></qrcode>
+        <text style="margin-top: 10px;height: 40px;">导出令牌</text>
+    </div>
+</stack>

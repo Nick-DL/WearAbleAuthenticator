@@ -1,0 +1,31 @@
+<stack class="stack-container">
+    <div class="container" onswipe="onswipe">
+        <text class="title">{{ addString }}</text>
+        <marquee class="words" scrollamount="{{ isGt2 ? 32 : 6 }}">{{ typeString }}</marquee>
+        <div class="button-container" style="margin-top : 0px;">
+            <input type="button" for="{{ number_array }}" class="button" value="{{ $item }}"
+                   onclick="onclick({{ $item }})"></input>
+        </div>
+        <div class="button-container">
+            <input type="button" for="{{ letter_array[0] }}" class="button" value="{{ $item }}"
+                   onclick="onclick({{ $item }})"></input>
+        </div>
+        <div class="button-container">
+            <input type="button" for="{{ letter_array[1] }}" class="button" value="{{ $item }}"
+                   onclick="onclick({{ $item }})"></input>
+        </div>
+        <div class="button-container">
+            <input type="checkbox" class="button case_style" @change="caseclick" checked="{{ case_checked }}"></input>
+            <input type="button" for="{{ letter_array[2] }}" class="button" value="{{ $item }}"
+                   onclick="onclick({{ $item }})"></input>
+        </div>
+        <div class="button-container">
+            <input type="button" class="search-button bottom-button" value="{{ stepString }}" @click="search"></input>
+            <input type="button" class="delete-button bottom-button" @click="delete" @longpress="deleteall"></input>
+        </div>
+    </div>
+    <div class="toast_container" show="{{ toast_if }}"
+         style="width : {{ toast_width }} px; left : {{ toast_left }} px;">
+        <text>{{ error_text }}</text>
+    </div>
+</stack>

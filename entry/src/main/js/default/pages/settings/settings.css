@@ -1,0 +1,70 @@
+.container {
+    width: 408px;
+    height: 480px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* fit3 头部样式 */
+.head{
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 5px;
+}
+
+.head-txt {
+    font-size: 30px;
+    margin-left: 51px;
+    color: white;
+}
+
+.head-time {
+    font-size: 30px;
+    margin-right: 51px;
+    color: white;
+}
+/* fit3 头部样式 */
+
+.title-container {
+    width: 408px;
+    height: 60px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.item-container {
+    width: 408px;
+    height: 394px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.item {
+    width: 408px;
+    height: 110px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.item-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.item-text {
+    width: 200px;
+    height: 37px;
+    text-align: left;
+}
+
+.item-arrow {
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+}

@@ -1,0 +1,113 @@
+.container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 408px;
+    height: 480px;
+}
+
+.title-container {
+    width: 408px;
+    height: 60px;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.head{
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 5px;
+}
+
+.head-txt {
+    font-size: 30px;
+    margin-left: 51px;
+    color: white;
+}
+
+.head-time {
+    font-size: 30px;
+    margin-right: 51px;
+    color: white;
+}
+.list {
+    width: 408px;
+    height: 396px;
+}
+
+.empty-item {
+    width: 408px;
+    height: 80px;
+}
+
+.icon-content-container {
+    width: 408px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.app-content-container {
+    width: 408px;
+    height: 180px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.app-sub-content-container {
+    width: 100%;
+    height: 480px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.app-other-text-container {
+    width: 408px;
+    height: 42px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.app-other-container {
+    width: 408px;
+    height: 130px;
+}
+
+.app-other-text {
+    margin-left: 50px;
+}
+
+.title-text {
+    font-size: 30px;
+}
+
+.app-icon {
+    width: 80px;
+    height: 80px;
+}
+
+.app-name-text {
+    font-size: 30px;
+    width: 408px;
+    text-align: center;
+}
+
+.app-version-text {
+    width: 408px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.app-content-text {
+    width: 408px;
+    text-align: center;
+    font-size: 30px;
+    color: gray;
+}

@@ -1,0 +1,228 @@
+.container {
+    width: 408px;
+    height: 480px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* fit3 头部样式 */
+.head{
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 5px;
+}
+
+.head-txt {
+    font-size: 30px;
+    margin-left: 51px;
+    color: white;
+}
+
+.head-time {
+    font-size: 30px;
+    margin-right: 51px;
+    color: white;
+}
+/* fit3 头部样式 */
+
+.export-container {
+    background-color: black;
+    justify-content: center;
+}
+
+.title-container {
+    width: 408px;
+    height: 60px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.menu-container {
+    width: 408px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.content-container {
+    width: 408px;
+    height: 304px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.empty-container {
+    width: 408px;
+    height: 304px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.empty-text {
+    height: 80px;
+    text-align: center;
+}
+
+.item-container {
+    width: 408px;
+    height: 101px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.code-desc-container {
+    width: 270px;
+    height: 101px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 70px;
+}
+
+.code-text {
+    font-size: 38px;
+    letter-spacing: 4px;
+}
+
+.desc-text {
+    width: 260px;
+    height: 40px;
+    text-overflow: ellipsis;
+    font-size: 30px;
+    color: gray;
+}
+
+.seconds-text {
+    font-size: 30px;
+    color: lightgray;
+}
+
+.progress {
+    left: 4px;
+    top: 4px;
+    width: 446px;
+    height: 446px;
+    stroke-width: 6px;
+    center-x: 223px;
+    center-y: 223px;
+    radius: 223px;
+    color: #414141;
+}
+
+.progress-background {
+    color: #bfbfbf;
+    background-color: #414141;
+    start-angle: 60deg;
+    total-angle: 60deg;
+}
+
+.progress-top-foreground {
+    background-color: transparent;
+    start-angle: 60deg;
+    total-angle: 60deg;
+}
+
+.progress-bottom-foreground {
+    background-color: transparent;
+    start-angle: 120deg;
+    total-angle: -60deg;
+}
+
+.bottom-icon {
+    width: 55px;
+    height: 70px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+.button-with-icon {
+    background-color: #00FFFFFF;
+    border-radius: 0px;
+}
+
+.button-with-icon:active {
+    background-color: #4dffffff;
+}
+
+.up-icon {
+    background-image: url("/common/icon_up.png");
+    margin-right: 4px;
+}
+
+.down-icon {
+    background-image: url("/common/icon_down.png");
+}
+
+.add-icon {
+    background-image: url("/common/icon_add.png");
+    margin-right: 4px;
+}
+
+.settings-icon {
+    background-image: url("/common/icon_settings.png");
+    margin-right: 4px;
+}
+
+.delete-container {
+    background-color: black;
+}
+
+.delete-sub-container {
+    width: 408px;
+    height: 406px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.delete-button-container {
+    width: 408px;
+    height: 104px;
+    justify-content: center;
+    margin-bottom: 68px;
+}
+
+.delete-text {
+    width: 318px;
+    height: 50px;
+    font-size: 38px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.delete-icon {
+    width: 104px;
+    height: 104px;
+    background-color: transparent;
+    border-radius: 0px;
+}
+
+.delete-icon:active {
+    background-color: #4dFFFFFF;
+}
+
+.cancel-icon {
+    background-image: url("/common/icon_cancel.png");
+    margin-right: 57px;
+}
+
+.check-icon {
+    background-image: url("/common/icon_check.png");
+    margin-left: 57px;
+}
+
+.qrcode {
+    width: 280px;
+    height: 280px;
+}

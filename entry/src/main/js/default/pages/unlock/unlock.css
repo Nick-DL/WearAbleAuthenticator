@@ -1,0 +1,54 @@
+.container {
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 408px;
+    height: 480px;
+}
+
+.title {
+    margin-top: 20px;
+    font-size: 38px;
+    text-align: center;
+    height: 60px;
+}
+
+.lock-settings-title {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.number-container {
+    width: 345px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 400px;
+    justify-content: center;
+}
+
+.input-number {
+    width: 86px;
+    height: 86px;
+    background-color: #262626;
+    font-size: 38px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.input-number:active {
+    background-color: #ff515151;
+}
+
+.delete-button {
+    width: 51px;
+    height: 34px;
+    top: 358px;
+    left: 305px;
+    border-radius: 0px;
+    background-color: #00000000;
+    background-image: url("/common/delete_word.png");
+}
+
+.input-left {
+    margin-left: 0px;
+}

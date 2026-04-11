@@ -1,0 +1,135 @@
+.container {
+    width: 408px;
+    height: 480px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.stack-container {
+    width: 408px;
+    height: 480px;
+}
+
+.delete-stack {
+    width: 95px;
+    height: 50px;
+}
+
+.title {
+    margin-top: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.words {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    height: 38px;
+    width: 360px;
+    text-align: center;
+}
+
+.button-container {
+    width: 408px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.button {
+    width: 42px;
+    height: 60px;
+    font-size: 30px;
+    background-color: transparent;
+    border-radius: 0px;
+}
+
+.button:active {
+    background-color: #4dffffff;
+}
+
+.delete-image {
+    width: 51px;
+    height: 34px;
+    left: 300px;
+    top: 390px;
+    background-color: dimgray;
+    border-radius: 10px;
+}
+
+.case_style {
+    width: 40px;
+    height: 60px;
+    background-color: transparent;
+    background-image: url("/common/xiaoxie.png");
+    margin-right: 3px;
+}
+
+.case_style:checked {
+    background-image: url("/common/daxie.png");
+}
+
+.change-button {
+    border-radius: 5px;
+    background-color: #3c4043;
+    width: 50px;
+}
+
+.search-button {
+    margin-left: 15px;
+    border-radius: 5px;
+    background-color: #3c4043;
+    width: 130px;
+}
+
+.bottom-button:active {
+    background-color: #ff666b70;
+}
+
+.delete-button {
+    margin-left: 15px;
+    border-radius: 5px;
+    background-color: #3c4043;
+    background-image: url("/common/delete_keyboard_word.png");
+    width: 80px;
+}
+
+.toast_container {
+    height: 80px;
+    top: 187px;
+    background-color: #fa404040;
+    border-radius: 48px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ani {
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+}
+
+.change-button {
+    border-radius: 5px;
+    background-color: #3c4043;
+    width: 50px;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+@keyframes disappear {
+    from {
+        opacity: 1;
+    } to {
+        opacity: 0;
+    }
+}

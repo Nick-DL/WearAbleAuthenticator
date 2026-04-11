@@ -1,0 +1,56 @@
+{
+  "app": {
+    "vendor": "nickdl",
+    "bundleName": "com.nickdl.wearable.authenticator",
+    "version": {
+      "code": 2,
+      "name": "1.0.1"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "deviceType": [
+      "liteWearable"
+    ],
+    "abilities": [
+      {
+        "name": "default",
+        "icon": "$media:icon",
+        "label": "$string:entry_MainAbility",
+        "type": "page"
+      }
+    ],
+    "distro": {
+      "moduleType": "entry",
+      "deliveryWithInstall": true,
+      "moduleName": "entry"
+    },
+    "distroFilter": {
+      "screenShape": {
+        "value": [
+          "rect"
+        ],
+        "policy": "include"
+      },
+      "screenWindow": {
+        "value": [
+          "408*480"
+        ],
+        "policy": "include"
+      }
+    },
+    "js": [
+      {
+        "pages": [
+          "pages/index/index",
+          "pages/unlock/unlock",
+          "pages/add/add",
+          "pages/settings/settings",
+          "pages/lock/lock",
+          "pages/about/about"
+        ],
+        "name": "default"
+      }
+    ]
+  }
+}
