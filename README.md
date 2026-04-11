@@ -1,2 +1,6 @@
-# WearAbleAuthenticator
+# WearableAuthenticator
+
+项目由 @cnoim 制作，我只是改了改样式表里面的尺寸，再从翡翠螃蟹适配的项目里抄了点时间的代码。
+
+上次接触轻鸿蒙手表app的调试还是在两年前，这会翡翠螃蟹大佬都改名了（似乎还做了个很强的跳一跳小游戏，我同学都在玩），time flies。
 
