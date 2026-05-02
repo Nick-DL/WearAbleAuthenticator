@@ -55,7 +55,8 @@ export default {
         renderList: [],
         showDelete: false,
         showExport: false,
-        qrValue: ""
+        qrValue: "",
+        font_family: "Harmony-Bold",
     },
     onInit() {
         this.getTime();

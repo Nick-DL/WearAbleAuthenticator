@@ -4,27 +4,36 @@
             <text class="head-txt">身份验证器</text>
             <text class="head-time">{{ timeString }}</text>
         </div>
+
         <div class="content-container">
-            <div class="item-container" for="{{ renderList }}" @click="handleExport($idx)" @longpress="handleDeleteOtp($idx)">
-                <list class="list-container" ref="mainlist">
-                    <list-item class="item">
-                        <stack class="item1">
-                            <div class="item-container">
-                                <div class="code-desc-container">
-                                    <text class="code-text"  style="font-family : {{ font_family }};">{{ $item.code }}</text>
-                                    <text class="desc-text">{{ $item.desc }}</text>
-                                </div>
-                                <text class="seconds-text">{{ updateTime }}s</text>
+            <list class="list-container" ref="mainlist">
+                <list-item class="item">
+                    <stack class="item1">
+                        <div class="item-container">
+                            <div class="code-desc-container">
+                                <text class="code-text"  style="font-family : {{ font_family }};">123466</text>
+                                <text class="desc-text">test</text>
                             </div>
-                        </stack>
-                    </list-item>
-                    <list-item class="item2"></list-item>
-                    <list-item class="item" style="background-color: transparent;"></list-item>
-                </list>
-            </div>
-            <div class="empty-container" if="{{ otpList.length == 0 }}">
-                <text class="empty-text">当前暂无令牌\n请先添加一个</text>
-            </div>
+                            <text class="seconds-text">10s</text>
+                        </div>
+                    </stack>
+                    <stack class="item2"></stack>
+                </list-item>
+                <list-item class="item2"></list-item>
+                <list-item class="item">
+                    <stack class="item1">
+                        <div class="item-container">
+                            <div class="code-desc-container">
+                                <text class="code-text">123566</text>
+                                <text class="desc-text">test</text>
+                            </div>
+                            <text class="seconds-text">20s</text>
+                        </div>
+                    </stack>
+                </list-item>
+                <list-item class="item2"></list-item>
+                <list-item class="item" style="background-color: transparent;"></list-item>
+            </list>
         </div>
         <div class="menu-container">
             <input type="button" class="bottom-icon up-icon button-with-icon" @click="handleListDown"></input>
